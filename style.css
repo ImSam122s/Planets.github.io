@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,400&family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(218, 218, 218);
+  color: #000000;
+  margin-top: 25px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+.logo {
+  width: 80px;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #b5bdb9;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #476363;
+}
+
+.backgroundd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(218, 218, 218);
+}
+
+
+.background {
+  align-items: left;
+  margin-left: 5px;
+  background: rgb(218, 218, 218);
+}
+
+.wrapper {
+  margin: 150px auto;
+  width: 70%;
+}
+
+img {
+  max-width: 320px;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 20px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+img:hover {
+  opacity: 0.8;
+  transition: 1.0s;
+}
+
+.text-box {
+  color: rgb(0, 0, 0);
+}
+
+.text-box h2 {
+  font-size: 40px;
+}
+
+.text-box p {
+  font-size: 25px;
+  text-align: justify;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
+  background: rgb(218, 218, 218);
+  
+}
+
+.heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  padding-top: 50px;
+ 
+ }
+
+
+.about-img {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 2rem 0 3rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home-sci {
+  position: bottom;
+  margin-left: 70px;
+  bottom: 40px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #707070;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #686868;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+
+}
+
+.home-sci a:hover {
+  color: #ffffff;
+
+}
+
+.home-sci a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; 
+  height: 100%;
+  background: #636363;
+  z-index: -1;
+  transition: .5s;
+}
+
+.home-sci a:hover:before {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.img-gallery{
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5px;
+
+}
+
+.img-gallery img{
+  width: 100%;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.img-gallery img:hover{
+  border-radius: 25px;
+  box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+
+}
+
+.full-img{
+  width: 100%;
+  height: 100vh;
+  background: rgba(88, 88, 88, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-img img{
+  width: 90%;
+  max-width: 700px;
+  border-radius: 25px;
+
+}
+
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.wrapper a {
+  background-color:rgb(82, 82, 82);
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  }

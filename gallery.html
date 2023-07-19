@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planets Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+  <header class="header">
+   <a href="home.html"> <img src="image/noun-space-4040186.png" class="logo"></a>
+    <nav class="navbar">
+      <a href="home.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="articles.html">Articles</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+
+  
+</body>
+</html>
+
+<section class="Planets" id="Planets">
+  <h2 class="heading">Image Gallery</h2>
+
+<body>
+  <div class="full-img" id="fullImgBox">
+    <img src="image/ariel 1.jpg" id="fullImg">
+  <span onclick="closeFullImg()">X</span>
+  </div>
+  <div class="img-gallery">
+  <img src="image/ariel 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/black hole types.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/black hole.jpg" alts=""  onclick="openFullImg(this.src)">
+  <img src="image/black holle.jpg" alts=""  onclick="openFullImg(this.src)">
+  <img src="image/calisto 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/deimos.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/earth.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/encedalus 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/epimetheus 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/europa 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/ganymede 1.png" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/io 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/jupiter.jpeg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/mars.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/mercury.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/mimas 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/miranda 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/moon.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/neptune.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/phobos.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/phoebe 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/pluto.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/prometheus 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/rhea 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/saturn.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/tethys 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/titan 1.jpeg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/titania 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/uranus.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/venus.jpg" alt=""  onclick="openFullImg(this.src)">
+</div>
+
+<section class="Planets" id="Planets">
+  <h2 class="heading">Nebulas</h2>
+
+<body>
+  <div class="full-img" id="fullImgBox">
+    <img src="image/ariel 1.jpg" id="fullImg">
+  <span onclick="closeFullImg()">X</span>
+  </div>
+  <div class="img-gallery">
+  <img src="image/nebula 1.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/nebula 2.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/nebula 3.jpg" alts=""  onclick="openFullImg(this.src)">
+  <img src="image/nebula 4.jpg" alts=""  onclick="openFullImg(this.src)">
+  <img src="image/nebula 5.jpg" alt=""  onclick="openFullImg(this.src)">
+</div>
+
+<section class="Planets" id="Planets">
+  <h2 class="heading">Asteroids</h2>
+
+<body>
+  <div class="full-img" id="fullImgBox">
+    <img src="image/ariel 1.jpg" id="fullImg">
+  <span onclick="closeFullImg()">X</span>
+  </div>
+  <div class="img-gallery">
+  <img src="image/asteroid 1.jpeg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/asteroid 2.jpg" alt=""  onclick="openFullImg(this.src)">
+  <img src="image/asteroid 3.jpg" alts=""  onclick="openFullImg(this.src)">
+  <img src="image/asteroid 4.jpg" alts=""  onclick="openFullImg(this.src)">
+</div>
+
+<script>
+
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
+
+  function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+  }
+
+  function closeFullImg(){
+    fullImgBox.style.display = "none";
+  }
+</script>
+
+</body>
